@@ -24,4 +24,4 @@ let result = str.split('\n\n')
                 .filter(item => checker(item))
                 .join('\r\n')
 
-writeSync(path.resolve(__dirname, BUILD_DIR, 'index.html'))
+writeSync(path.resolve(__dirname, BUILD_DIR, 'ssr.txt'), base64(result))
